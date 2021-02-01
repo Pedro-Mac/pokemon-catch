@@ -39,7 +39,11 @@ const catchPokemons = (sequence) => {
       pokemonsCaught += 1;
     }
   }
+  console.log("pokemons caught", pokemonsCaught);
   return pokemonsCaught;
 };
+
+catchPokemons("NSNSNSNSNSNSNS");
+catchPokemons("NESO");
 
 module.exports = catchPokemons;
