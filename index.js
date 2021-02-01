@@ -1,7 +1,3 @@
-// cases
-// Letter not N, S, E, O
-// Letter capitalized vs not capitalized
-
 const catchPokemons = (sequence) => {
   if (typeof sequence !== "string") return "the sequence is not valid";
 
@@ -37,7 +33,7 @@ const catchPokemons = (sequence) => {
       (item) => item.x === currentXPosition && item.y === currentYPosition,
     );
 
-    //Add the location to the locations if Ash hadn't been there before
+    //Add the location to the locations if Ash wasn't there before
     if (!locationRepeats) {
       arrayOfCoordinates.push({ x: currentXPosition, y: currentYPosition });
       pokemonsCaught += 1;
